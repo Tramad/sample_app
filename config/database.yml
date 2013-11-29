@@ -18,17 +18,21 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  adapter: sqlite3
-  database: db/test.sqlite3
+  adapter: postgresql
+  database: test
+  host: localhost
+  username: tester
+  port:	5432
+  password: 1111
   pool: 5
   timeout: 5000
 
 production:
-  adapter: sqlite3
+  adapter: postgresql
   host:	ec2-54-204-35-114.compute-1.amazonaws.com
-  database:	db682pdh7nk34f
-  username:	gnyuzqostxnnxt
+  database:	d42ok1o9ciaon8
+  username:	uxmldfcsgubjqi
   port:	5432
-  password: MPMxhmE3aUkly4sqmz3B-AHpvf
+  password: Q0rjMd2I5xO4ScJcb764EX84Hg
   pool: 5
   timeout: 5000
